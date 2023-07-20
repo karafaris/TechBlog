@@ -1,22 +1,23 @@
 const { Post } = require('../models');
 
-const postData = [
-  {
-    title: 'ORM Mapping',
-    content: 'I have really loved learning about ORM.',
-    user_id: 1
-    
-  },
-  {
-    title: 'Why MVC is import',
-    content: 'MVC allows developers to maintain true separation of concerns.',
-    user_id: 2
-  },
-  {
-    title: 'Authentication vs. Authorization',
-    content: 'The is a difference where authentication is confirming your own identity whereas authorization means being allowed access to system.',
-    user_id: 3
-  }
+const postData = [{
+        title: 'Title One',
+        body: 'Praesent ultrices orci ut augue condimentum eleifend.',
+// this is where url: 'http://...' went
+        user_id: 1
+    },
+    {
+        title: 'Title Two',
+        body: 'Sed feugiat leo sit amet libero finibus euismod. Nulla viverra vulputate eleifend.',
+
+        user_id: 2
+    },
+    {
+        title: 'Another Title',
+        body: 'Donec vitae enim in nulla tincidunt malesuada. Duis ac lacus mauris. Suspendisse non mi malesuada erat egestas porttitor id a turpis. Vivamus id libero urna. Nam tincidunt quam vitae turpis sodales, a convallis odio scelerisque.',
+
+        user_id: 3
+    }
 ];
 
 const seedPosts = () => Post.bulkCreate(postData);

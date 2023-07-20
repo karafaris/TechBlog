@@ -1,9 +1,8 @@
-<article class="post">
 
-    {{#each posts as |post| }}
-        {{> post-info post}}
-    {{/each}}
-
-</article>
-
-
+<ol class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ol>
